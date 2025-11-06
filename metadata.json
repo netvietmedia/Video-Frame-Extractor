@@ -1,5 +1,24 @@
 {
-  "name": "Video Frame Extractor",
-  "description": "An application to upload a video, extract frames at a specified interval, and download them as a ZIP archive. This tool requires 'jszip' and 'file-saver' libraries to function. Please install them using 'npm install jszip file-saver @types/file-saver'.",
-  "requestFramePermissions": []
+  "name": "video-frame-extractor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "jszip": "^3.10.1",
+    "file-saver": "^2.0.5",
+    "mediainfo.js": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
 }
