@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "Trình tạo kịch bản Video AI",
+    "subtitle": "Sử dụng Gemini để phân tích video và tự động tạo kịch bản."
+  },
+  "config": {
+    "analysis": {
+      "title": "1. Cấu hình phân tích",
+      "modeCount": "Số lượng khung hình",
+      "modeInterval": "Theo giây",
+      "frameCountLabel": "Số lượng khung hình:",
+      "intervalLabel": "Chụp một khung hình mỗi X giây"
+    },
+    "upload": {
+      "title": "2. Tải lên video",
+      "selectFile": "Chọn một file",
+      "dragAndDrop": "hoặc kéo và thả",
+      "selected": "Đã chọn",
+      "delete": "Xóa video"
+    },
+    "script": {
+      "title": "Cấu hình cho kịch bản mới",
+      "aspectRatio": "Tỷ lệ khung hình (Aspect Ratio)",
+      "style": "Phong cách (Style)",
+      "transition": "Chuyển cảnh (Transition)",
+      "sceneCount": "Số Lượng Cảnh",
+      "backgroundMusic": "Nhạc nền",
+      "dialogue": "Hội thoại",
+      "dialogueLanguage": "Ngôn ngữ hội thoại",
+      "ttsVoices": "Các giọng TTS có sẵn của Gemini",
+      "srtUploadTitle": "Tải lên file SRT (cho hội thoại)",
+      "customPrompt": "Ý tưởng kịch bản (Prompt)",
+      "customPromptPlaceholder": "Ví dụ: Tạo một video quảng cáo ngắn, kịch tính về sản phẩm..."
+    }
+  },
+  "buttons": {
+    "startExtraction": "Bắt đầu trích xuất",
+    "extracting": "Đang trích xuất...",
+    "downloadAll": "Tải xuống tất cả",
+    "zipping": "Đang nén...",
+    "rewriteScript": "Viết lại kịch bản",
+    "writing": "Đang viết...",
+    "editAllJson": "Sửa tất cả JSON",
+    "copyText": "Sao chép văn bản",
+    "downloadJson": "Tải xuống (JSON)",
+    "editJson": "Sửa JSON",
+    "copyScene": "Sao chép Cảnh",
+    "copy": "Sao chép",
+    "cancel": "Hủy",
+    "save": "Lưu"
+  },
+  "status": {
+    "initializing": "Đang khởi tạo video...",
+    "analyzingVideo": "Đang phân tích thông tin video...",
+    "extractingFrame": "Đang trích xuất khung hình",
+    "extractComplete": "Trích xuất hoàn tất {count} khung hình.",
+    "rewriting": "Đang viết lại kịch bản với Gemini... Việc này có thể mất vài phút.",
+    "rewriteComplete": "Viết lại kịch bản hoàn tất!",
+    "zipping": "Đang nén các khung hình...",
+    "zipComplete": "Tải xuống ZIP thành công!",
+    "writingInProgress": "Gemini đang viết kịch bản...",
+    "error": {
+      "noVideo": "Lỗi: Vui lòng chọn một file video.",
+      "intervalPositive": "Lỗi: Khoảng thời gian phải lớn hơn 0.",
+      "videoLoad": "Lỗi: Không thể tải video. Vui lòng thử lại với định dạng khác.",
+      "videoAnalysisFailed": "Lỗi: Không thể phân tích siêu dữ liệu video.",
+      "noFrames": "Lỗi: Không có khung hình nào để phân tích.",
+      "apiKeyAuth": "Lỗi: Không thể xác thực API key. Vui lòng thử lại.",
+      "analysisFailed": "Lỗi: Phân tích thất bại. Vui lòng thử lại.",
+      "apiKeyNotFound": "Lỗi API key. Vui lòng chọn lại API key và thử lại.",
+      "zipFailed": "Lỗi: Không thể tạo file ZIP.",
+      "invalidJson": "Lỗi: Định dạng JSON không hợp lệ.",
+      "jsonParseError": "Lỗi: Một hoặc nhiều cấu hình JSON của cảnh bị lỗi và không thể mở để chỉnh sửa hàng loạt.",
+      "jsonNotArray": "Dữ liệu JSON phải là một mảng (Array).",
+      "jsonItemMismatch": "Số lượng mục JSON ({jsonCount}) không khớp với số lượng cảnh ({sceneCount}).",
+      "jsonSaveFailed": "Lỗi: Không thể lưu JSON. Vui lòng kiểm tra lại định dạng."
+    }
+  },
+  "results": {
+    "frames": {
+      "title": "Khung hình đã trích xuất ({count})",
+      "alt": "Khung hình",
+      "suggested": "Gợi ý khung hình"
+    },
+    "script": {
+      "title": "Kịch bản đã tạo",
+      "subtitle": "Chỉnh sửa JSON cho từng cảnh hoặc tải toàn bộ kịch bản."
+    }
+  },
+  "modal": {
+    "editTitleScene": "Chỉnh sửa JSON cho Cảnh",
+    "editTitleAllScenes": "Chỉnh sửa JSON cho tất cả các cảnh"
+  },
+  "common": {
+    "male": "Nam",
+    "female": "Nữ",
+    "copied": "Đã sao chép!",
+    "error": "Lỗi",
+    "details": "Chi tiết"
+  }
+}

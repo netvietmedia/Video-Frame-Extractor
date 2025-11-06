@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "Generador de Guiones de Video con IA",
+    "subtitle": "Usa Gemini para analizar videos y generar guiones automáticamente."
+  },
+  "config": {
+    "analysis": {
+      "title": "1. Configuración de Análisis",
+      "modeCount": "Número de fotogramas",
+      "modeInterval": "Por intervalo (segundos)",
+      "frameCountLabel": "Número de fotogramas:",
+      "intervalLabel": "Capturar un fotograma cada X segundos"
+    },
+    "upload": {
+      "title": "2. Subir Video",
+      "selectFile": "Elige un archivo",
+      "dragAndDrop": "o arrastra y suelta",
+      "selected": "Seleccionado",
+      "delete": "Eliminar video"
+    },
+    "script": {
+      "title": "Configuración para Nuevo Guion",
+      "aspectRatio": "Relación de Aspecto",
+      "style": "Estilo",
+      "transition": "Transición",
+      "sceneCount": "Cantidad de Escenas",
+      "backgroundMusic": "Música de fondo",
+      "dialogue": "Diálogo",
+      "dialogueLanguage": "Idioma del Diálogo",
+      "ttsVoices": "Voces TTS de Gemini Disponibles",
+      "srtUploadTitle": "Subir archivo SRT (para diálogo)",
+      "customPrompt": "Idea para el Guion (Prompt)",
+      "customPromptPlaceholder": "Ej: Crear un comercial corto y dramático para un producto..."
+    }
+  },
+  "buttons": {
+    "startExtraction": "Iniciar Extracción",
+    "extracting": "Extrayendo...",
+    "downloadAll": "Descargar Todo",
+    "zipping": "Comprimiendo...",
+    "rewriteScript": "Reescribir Guion",
+    "writing": "Escribiendo...",
+    "editAllJson": "Editar todo el JSON",
+    "copyText": "Copiar Texto",
+    "downloadJson": "Descargar (JSON)",
+    "editJson": "Editar JSON",
+    "copyScene": "Copiar Escena",
+    "copy": "Copiar",
+    "cancel": "Cancelar",
+    "save": "Guardar"
+  },
+  "status": {
+    "initializing": "Inicializando video...",
+    "analyzingVideo": "Analizando información del video...",
+    "extractingFrame": "Extrayendo fotograma",
+    "extractComplete": "Extracción completa. Se generaron {count} fotogramas.",
+    "rewriting": "Reescribiendo guion con Gemini... Esto puede tardar unos minutos.",
+    "rewriteComplete": "¡Reescritura del guion completa!",
+    "zipping": "Comprimiendo fotogramas...",
+    "zipComplete": "¡Descarga del ZIP exitosa!",
+    "writingInProgress": "Gemini está escribiendo el guion...",
+    "error": {
+      "noVideo": "Error: Por favor, selecciona un archivo de video.",
+      "intervalPositive": "Error: El intervalo debe ser mayor que 0.",
+      "videoLoad": "Error: No se pudo cargar el video. Por favor, intenta con un formato diferente.",
+      "videoAnalysisFailed": "Error: No se pudieron analizar los metadatos del video.",
+      "noFrames": "Error: No hay fotogramas para analizar.",
+      "apiKeyAuth": "Error: No se pudo autenticar la clave de API. Por favor, inténtalo de nuevo.",
+      "analysisFailed": "Error: El análisis falló. Por favor, inténtalo de nuevo.",
+      "apiKeyNotFound": "Error de clave de API. Por favor, vuelve a seleccionar tu clave de API e inténtalo de nuevo.",
+      "zipFailed": "Error: No se pudo crear el archivo ZIP.",
+      "invalidJson": "Error: Formato JSON no válido.",
+      "jsonParseError": "Error: Una o más configuraciones JSON de escena no son válidas y no se pueden abrir para edición masiva.",
+      "jsonNotArray": "Los datos JSON deben ser un array.",
+      "jsonItemMismatch": "El número de elementos JSON ({jsonCount}) no coincide con el número de escenas ({sceneCount}).",
+      "jsonSaveFailed": "Error: No se pudo guardar el JSON. Por favor, comprueba el formato."
+    }
+  },
+  "results": {
+    "frames": {
+      "title": "Fotogramas Extraídos ({count})",
+      "alt": "Fotograma",
+      "suggested": "Fotogramas Sugeridos"
+    },
+    "script": {
+      "title": "Guion Generado",
+      "subtitle": "Edita el JSON de cada escena o descarga el guion completo."
+    }
+  },
+  "modal": {
+    "editTitleScene": "Editar JSON para Escena",
+    "editTitleAllScenes": "Editar JSON para Todas las Escenas"
+  },
+  "common": {
+    "male": "Masculino",
+    "female": "Femenino",
+    "copied": "¡Copiado!",
+    "error": "Error",
+    "details": "Detalles"
+  }
+}

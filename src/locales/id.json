@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "Generator Naskah Video AI",
+    "subtitle": "Gunakan Gemini untuk menganalisis video dan membuat naskah secara otomatis."
+  },
+  "config": {
+    "analysis": {
+      "title": "1. Konfigurasi Analisis",
+      "modeCount": "Jumlah bingkai",
+      "modeInterval": "Berdasarkan interval (detik)",
+      "frameCountLabel": "Jumlah bingkai:",
+      "intervalLabel": "Ambil satu bingkai setiap X detik"
+    },
+    "upload": {
+      "title": "2. Unggah Video",
+      "selectFile": "Pilih file",
+      "dragAndDrop": "atau seret dan lepas",
+      "selected": "Terpilih",
+      "delete": "Hapus video"
+    },
+    "script": {
+      "title": "Konfigurasi untuk Naskah Baru",
+      "aspectRatio": "Rasio Aspek",
+      "style": "Gaya",
+      "transition": "Transisi",
+      "sceneCount": "Jumlah Adegan",
+      "backgroundMusic": "Musik latar",
+      "dialogue": "Dialog",
+      "dialogueLanguage": "Bahasa Dialog",
+      "ttsVoices": "Suara TTS Gemini yang Tersedia",
+      "srtUploadTitle": "Unggah file SRT (untuk dialog)",
+      "customPrompt": "Ide Naskah (Prompt)",
+      "customPromptPlaceholder": "Contoh: Buat iklan komersial singkat yang dramatis untuk suatu produk..."
+    }
+  },
+  "buttons": {
+    "startExtraction": "Mulai Ekstraksi",
+    "extracting": "Mengekstrak...",
+    "downloadAll": "Unduh Semua",
+    "zipping": "Mengompres...",
+    "rewriteScript": "Tulis Ulang Naskah",
+    "writing": "Menulis...",
+    "editAllJson": "Edit Semua JSON",
+    "copyText": "Salin Teks",
+    "downloadJson": "Unduh (JSON)",
+    "editJson": "Edit JSON",
+    "copyScene": "Salin Adegan",
+    "copy": "Salin",
+    "cancel": "Batal",
+    "save": "Simpan"
+  },
+  "status": {
+    "initializing": "Menginisialisasi video...",
+    "analyzingVideo": "Menganalisis info video...",
+    "extractingFrame": "Mengekstrak bingkai",
+    "extractComplete": "Ekstraksi selesai. {count} bingkai dihasilkan.",
+    "rewriting": "Menulis ulang naskah dengan Gemini... Ini mungkin memakan waktu beberapa menit.",
+    "rewriteComplete": "Penulisan ulang naskah selesai!",
+    "zipping": "Mengompres bingkai...",
+    "zipComplete": "Unduhan ZIP berhasil!",
+    "writingInProgress": "Gemini sedang menulis naskah...",
+    "error": {
+      "noVideo": "Error: Silakan pilih file video.",
+      "intervalPositive": "Error: Interval harus lebih besar dari 0.",
+      "videoLoad": "Error: Tidak dapat memuat video. Silakan coba format yang berbeda.",
+      "videoAnalysisFailed": "Error: Tidak dapat menganalisis metadata video.",
+      "noFrames": "Error: Tidak ada bingkai untuk dianalisis.",
+      "apiKeyAuth": "Error: Tidak dapat mengautentikasi kunci API. Silakan coba lagi.",
+      "analysisFailed": "Error: Analisis gagal. Silakan coba lagi.",
+      "apiKeyNotFound": "Error kunci API. Silakan pilih kembali kunci API Anda dan coba lagi.",
+      "zipFailed": "Error: Tidak dapat membuat file ZIP.",
+      "invalidJson": "Error: Format JSON tidak valid.",
+      "jsonParseError": "Error: Satu atau lebih konfigurasi JSON adegan tidak valid dan tidak dapat dibuka untuk pengeditan massal.",
+      "jsonNotArray": "Data JSON harus berupa array.",
+      "jsonItemMismatch": "Jumlah item JSON ({jsonCount}) tidak cocok dengan jumlah adegan ({sceneCount}).",
+      "jsonSaveFailed": "Error: Tidak dapat menyimpan JSON. Silakan periksa formatnya."
+    }
+  },
+  "results": {
+    "frames": {
+      "title": "Bingkai yang Diekstrak ({count})",
+      "alt": "Bingkai",
+      "suggested": "Bingkai yang Disarankan"
+    },
+    "script": {
+      "title": "Naskah yang Dihasilkan",
+      "subtitle": "Edit JSON untuk setiap adegan atau unduh seluruh naskah."
+    }
+  },
+  "modal": {
+    "editTitleScene": "Edit JSON untuk Adegan",
+    "editTitleAllScenes": "Edit JSON untuk Semua Adegan"
+  },
+  "common": {
+    "male": "Pria",
+    "female": "Wanita",
+    "copied": "Tersalin!",
+    "error": "Error",
+    "details": "Detail"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "AI ビデオスクリプトジェネレーター",
+    "subtitle": "Gemini を使用してビデオを分析し、スクリプトを自動生成します。"
+  },
+  "config": {
+    "analysis": {
+      "title": "1. 分析設定",
+      "modeCount": "フレーム数",
+      "modeInterval": "間隔（秒）",
+      "frameCountLabel": "フレーム数：",
+      "intervalLabel": "X 秒ごとに 1 フレームをキャプチャ"
+    },
+    "upload": {
+      "title": "2. ビデオをアップロード",
+      "selectFile": "ファイルを選択",
+      "dragAndDrop": "またはドラッグ＆ドロップ",
+      "selected": "選択済み",
+      "delete": "ビデオを削除"
+    },
+    "script": {
+      "title": "新しいスクリプトの設定",
+      "aspectRatio": "アスペクト比",
+      "style": "スタイル",
+      "transition": "トランジション",
+      "sceneCount": "シーン数",
+      "backgroundMusic": "BGM",
+      "dialogue": "台詞",
+      "dialogueLanguage": "台詞の言語",
+      "ttsVoices": "利用可能な Gemini TTS 音声",
+      "srtUploadTitle": "SRTファイルをアップロード (セリフ用)",
+      "customPrompt": "スクリプトのアイデア（プロンプト）",
+      "customPromptPlaceholder": "例：製品の短くドラマチックなコマーシャルを作成する..."
+    }
+  },
+  "buttons": {
+    "startExtraction": "抽出を開始",
+    "extracting": "抽出中...",
+    "downloadAll": "すべてダウンロード",
+    "zipping": "圧縮中...",
+    "rewriteScript": "スクリプトを書き直す",
+    "writing": "作成中...",
+    "editAllJson": "すべての JSON を編集",
+    "copyText": "テキストをコピー",
+    "downloadJson": "ダウンロード (JSON)",
+    "editJson": "JSON を編集",
+    "copyScene": "シーンをコピー",
+    "copy": "コピー",
+    "cancel": "キャンセル",
+    "save": "保存"
+  },
+  "status": {
+    "initializing": "ビデオを初期化中...",
+    "analyzingVideo": "ビデオ情報を分析中...",
+    "extractingFrame": "フレームを抽出中",
+    "extractComplete": "抽出が完了しました。{count} フレームが生成されました。",
+    "rewriting": "Gemini でスクリプトを書き直しています... これには数分かかる場合があります。",
+    "rewriteComplete": "スクリプトの書き直しが完了しました！",
+    "zipping": "フレームを圧縮中...",
+    "zipComplete": "ZIP のダウンロードに成功しました！",
+    "writingInProgress": "Gemini がスクリプトを作成中です...",
+    "error": {
+      "noVideo": "エラー：ビデオファイルを選択してください。",
+      "intervalPositive": "エラー：間隔は 0 より大きい必要があります。",
+      "videoLoad": "エラー：ビデオを読み込めませんでした。別の形式をお試しください。",
+      "videoAnalysisFailed": "エラー：ビデオのメタデータを分析できませんでした。",
+      "noFrames": "エラー：分析するフレームがありません。",
+      "apiKeyAuth": "エラー：API キーを認証できませんでした。もう一度お試しください。",
+      "analysisFailed": "エラー：分析に失敗しました。もう一度お試しください。",
+      "apiKeyNotFound": "API キーのエラーです。API キーを再選択してもう一度お試しください。",
+      "zipFailed": "エラー：ZIP ファイルを作成できませんでした。",
+      "invalidJson": "エラー：無効な JSON 形式です。",
+      "jsonParseError": "エラー：1つ以上のシーンのJSON構成が無効であり、一括編集のために開くことができません。",
+      "jsonNotArray": "JSON データは配列である必要があります。",
+      "jsonItemMismatch": "JSON アイテム数（{jsonCount}）がシーン数（{sceneCount}）と一致しません。",
+      "jsonSaveFailed": "エラー：JSON を保存できませんでした。形式を確認してください。"
+    }
+  },
+  "results": {
+    "frames": {
+      "title": "抽出されたフレーム ({count})",
+      "alt": "フレーム",
+      "suggested": "推奨フレーム数"
+    },
+    "script": {
+      "title": "生成されたスクリプト",
+      "subtitle": "各シーンの JSON を編集するか、スクリプト全体をダウンロードします。"
+    }
+  },
+  "modal": {
+    "editTitleScene": "シーンの JSON を編集",
+    "editTitleAllScenes": "すべてのシーンの JSON を編集"
+  },
+  "common": {
+    "male": "男性",
+    "female": "女性",
+    "copied": "コピーしました！",
+    "error": "エラー",
+    "details": "詳細"
+  }
+}

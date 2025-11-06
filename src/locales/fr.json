@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "Générateur de Scénario Vidéo par IA",
+    "subtitle": "Utilisez Gemini pour analyser des vidéos et générer des scénarios automatiquement."
+  },
+  "config": {
+    "analysis": {
+      "title": "1. Configuration de l'Analyse",
+      "modeCount": "Nombre d'images",
+      "modeInterval": "Par intervalle (secondes)",
+      "frameCountLabel": "Nombre d'images :",
+      "intervalLabel": "Capturer une image toutes les X secondes"
+    },
+    "upload": {
+      "title": "2. Télécharger la Vidéo",
+      "selectFile": "Choisir un fichier",
+      "dragAndDrop": "ou glisser-déposer",
+      "selected": "Sélectionné",
+      "delete": "Supprimer la vidéo"
+    },
+    "script": {
+      "title": "Configuration pour le Nouveau Scénario",
+      "aspectRatio": "Ratio d'Aspect",
+      "style": "Style",
+      "transition": "Transition",
+      "sceneCount": "Nombre de Scènes",
+      "backgroundMusic": "Musique de fond",
+      "dialogue": "Dialogue",
+      "dialogueLanguage": "Langue du Dialogue",
+      "ttsVoices": "Voix TTS Gemini Disponibles",
+      "srtUploadTitle": "Télécharger un fichier SRT (pour le dialogue)",
+      "customPrompt": "Idée de Scénario (Prompt)",
+      "customPromptPlaceholder": "Ex : Créer une courte publicité dramatique pour un produit..."
+    }
+  },
+  "buttons": {
+    "startExtraction": "Démarrer l'Extraction",
+    "extracting": "Extraction en cours...",
+    "downloadAll": "Tout Télécharger",
+    "zipping": "Compression...",
+    "rewriteScript": "Réécrire le Scénario",
+    "writing": "Écriture en cours...",
+    "editAllJson": "Modifier tout le JSON",
+    "copyText": "Copier le Texte",
+    "downloadJson": "Télécharger (JSON)",
+    "editJson": "Modifier JSON",
+    "copyScene": "Copier la Scène",
+    "copy": "Copier",
+    "cancel": "Annuler",
+    "save": "Enregistrer"
+  },
+  "status": {
+    "initializing": "Initialisation de la vidéo...",
+    "analyzingVideo": "Analyse des informations de la vidéo...",
+    "extractingFrame": "Extraction de l'image",
+    "extractComplete": "Extraction terminée. {count} images générées.",
+    "rewriting": "Réécriture du scénario avec Gemini... Cela peut prendre quelques minutes.",
+    "rewriteComplete": "Réécriture du scénario terminée !",
+    "zipping": "Compression des images...",
+    "zipComplete": "Téléchargement du ZIP réussi !",
+    "writingInProgress": "Gemini est en train d'écrire le scénario...",
+    "error": {
+      "noVideo": "Erreur : Veuillez sélectionner un fichier vidéo.",
+      "intervalPositive": "Erreur : L'intervalle doit être supérieur à 0.",
+      "videoLoad": "Erreur : Impossible de charger la vidéo. Veuillez essayer un format différent.",
+      "videoAnalysisFailed": "Erreur : Impossible d'analyser les métadonnées de la vidéo.",
+      "noFrames": "Erreur : Aucune image à analyser.",
+      "apiKeyAuth": "Erreur : Impossible d'authentifier la clé API. Veuillez réessayer.",
+      "analysisFailed": "Erreur : L'analyse a échoué. Veuillez réessayer.",
+      "apiKeyNotFound": "Erreur de clé API. Veuillez resélectionner votre clé API et réessayer.",
+      "zipFailed": "Erreur : Impossible de créer le fichier ZIP.",
+      "invalidJson": "Erreur : Format JSON invalide.",
+      "jsonParseError": "Erreur : Une ou plusieurs configurations JSON de scène sont invalides et ne peuvent pas être ouvertes pour modification groupée.",
+      "jsonNotArray": "Les données JSON doivent être un tableau.",
+      "jsonItemMismatch": "Le nombre d'éléments JSON ({jsonCount}) ne correspond pas au nombre de scènes ({sceneCount}).",
+      "jsonSaveFailed": "Erreur : Impossible d'enregistrer le JSON. Veuillez vérifier le format."
+    }
+  },
+  "results": {
+    "frames": {
+      "title": "Images Extraites ({count})",
+      "alt": "Image",
+      "suggested": "Images Suggérées"
+    },
+    "script": {
+      "title": "Scénario Généré",
+      "subtitle": "Modifiez le JSON de chaque scène ou téléchargez le scénario complet."
+    }
+  },
+  "modal": {
+    "editTitleScene": "Modifier le JSON pour la Scène",
+    "editTitleAllScenes": "Modifier le JSON pour Toutes les Scènes"
+  },
+  "common": {
+    "male": "Homme",
+    "female": "Femme",
+    "copied": "Copié !",
+    "error": "Erreur",
+    "details": "Détails"
+  }
+}

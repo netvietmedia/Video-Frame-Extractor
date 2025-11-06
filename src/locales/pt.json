@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "Gerador de Roteiros de Vídeo com IA",
+    "subtitle": "Use o Gemini para analisar vídeos e gerar roteiros automaticamente."
+  },
+  "config": {
+    "analysis": {
+      "title": "1. Configuração da Análise",
+      "modeCount": "Número de quadros",
+      "modeInterval": "Por intervalo (segundos)",
+      "frameCountLabel": "Número de quadros:",
+      "intervalLabel": "Capturar um quadro a cada X segundos"
+    },
+    "upload": {
+      "title": "2. Carregar Vídeo",
+      "selectFile": "Escolha um arquivo",
+      "dragAndDrop": "ou arraste e solte",
+      "selected": "Selecionado",
+      "delete": "Excluir vídeo"
+    },
+    "script": {
+      "title": "Configuração para Novo Roteiro",
+      "aspectRatio": "Proporção da Tela",
+      "style": "Estilo",
+      "transition": "Transição",
+      "sceneCount": "Contagem de Cenas",
+      "backgroundMusic": "Música de fundo",
+      "dialogue": "Diálogo",
+      "dialogueLanguage": "Idioma do Diálogo",
+      "ttsVoices": "Vozes TTS do Gemini Disponíveis",
+      "srtUploadTitle": "Carregar arquivo SRT (para diálogo)",
+      "customPrompt": "Ideia para o Roteiro (Prompt)",
+      "customPromptPlaceholder": "Ex: Criar um comercial curto e dramático para um produto..."
+    }
+  },
+  "buttons": {
+    "startExtraction": "Iniciar Extração",
+    "extracting": "Extraindo...",
+    "downloadAll": "Baixar Tudo",
+    "zipping": "Compactando...",
+    "rewriteScript": "Reescrever Roteiro",
+    "writing": "Escrevendo...",
+    "editAllJson": "Editar todo o JSON",
+    "copyText": "Copiar Texto",
+    "downloadJson": "Baixar (JSON)",
+    "editJson": "Editar JSON",
+    "copyScene": "Copiar Cena",
+    "copy": "Copiar",
+    "cancel": "Cancelar",
+    "save": "Salvar"
+  },
+  "status": {
+    "initializing": "Inicializando vídeo...",
+    "analyzingVideo": "Analisando informações do vídeo...",
+    "extractingFrame": "Extraindo quadro",
+    "extractComplete": "Extração concluída. {count} quadros gerados.",
+    "rewriting": "Reescrevendo roteiro com o Gemini... Isso pode levar alguns minutos.",
+    "rewriteComplete": "Reescrita do roteiro concluída!",
+    "zipping": "Compactando quadros...",
+    "zipComplete": "Download do ZIP bem-sucedido!",
+    "writingInProgress": "O Gemini está escrevendo o roteiro...",
+    "error": {
+      "noVideo": "Erro: Por favor, selecione um arquivo de vídeo.",
+      "intervalPositive": "Erro: O intervalo deve ser maior que 0.",
+      "videoLoad": "Erro: Não foi possível carregar o vídeo. Por favor, tente um formato diferente.",
+      "videoAnalysisFailed": "Erro: Não foi possível analisar os metadados do vídeo.",
+      "noFrames": "Erro: Nenhum quadro para analisar.",
+      "apiKeyAuth": "Erro: Não foi possível autenticar a chave de API. Por favor, tente novamente.",
+      "analysisFailed": "Erro: A análise falhou. Por favor, tente novamente.",
+      "apiKeyNotFound": "Erro na chave de API. Por favor, selecione novamente sua chave de API e tente novamente.",
+      "zipFailed": "Erro: Não foi possível criar o arquivo ZIP.",
+      "invalidJson": "Erro: Formato JSON inválido.",
+      "jsonParseError": "Erro: Uma ou mais configurações JSON de cena são inválidas e не podem ser abertas para edição em massa.",
+      "jsonNotArray": "Os dados JSON devem ser um array.",
+      "jsonItemMismatch": "O número de itens JSON ({jsonCount}) não corresponde ao número de cenas ({sceneCount}).",
+      "jsonSaveFailed": "Erro: Não foi possível salvar o JSON. Por favor, verifique o formato."
+    }
+  },
+  "results": {
+    "frames": {
+      "title": "Quadros Extraídos ({count})",
+      "alt": "Quadro",
+      "suggested": "Quadros Sugeridos"
+    },
+    "script": {
+      "title": "Roteiro Gerado",
+      "subtitle": "Edite o JSON de cada cena ou baixe o roteiro inteiro."
+    }
+  },
+  "modal": {
+    "editTitleScene": "Editar JSON para a Cena",
+    "editTitleAllScenes": "Editar JSON para Todas as Cenas"
+  },
+  "common": {
+    "male": "Masculino",
+    "female": "Feminino",
+    "copied": "Copiado!",
+    "error": "Erro",
+    "details": "Detalhes"
+  }
+}

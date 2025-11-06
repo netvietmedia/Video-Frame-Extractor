@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "AI Video Script Generator",
+    "subtitle": "Use Gemini to analyze videos and automatically generate scripts."
+  },
+  "config": {
+    "analysis": {
+      "title": "1. Analysis Configuration",
+      "modeCount": "Number of frames",
+      "modeInterval": "By interval (seconds)",
+      "frameCountLabel": "Number of frames:",
+      "intervalLabel": "Capture one frame every X seconds"
+    },
+    "upload": {
+      "title": "2. Upload Video",
+      "selectFile": "Choose a file",
+      "dragAndDrop": "or drag and drop",
+      "selected": "Selected",
+      "delete": "Delete video"
+    },
+    "script": {
+      "title": "Configuration for New Script",
+      "aspectRatio": "Aspect Ratio",
+      "style": "Style",
+      "transition": "Transition",
+      "sceneCount": "Scene Count",
+      "backgroundMusic": "Background music",
+      "dialogue": "Dialogue",
+      "dialogueLanguage": "Dialogue Language",
+      "ttsVoices": "Available Gemini TTS Voices",
+      "srtUploadTitle": "Upload SRT File (for dialogue)",
+      "customPrompt": "Script Idea (Prompt)",
+      "customPromptPlaceholder": "E.g., Create a short, dramatic commercial for a product..."
+    }
+  },
+  "buttons": {
+    "startExtraction": "Start Extraction",
+    "extracting": "Extracting...",
+    "downloadAll": "Download All",
+    "zipping": "Zipping...",
+    "rewriteScript": "Rewrite Script",
+    "writing": "Writing...",
+    "editAllJson": "Edit All JSON",
+    "copyText": "Copy Text",
+    "downloadJson": "Download (JSON)",
+    "editJson": "Edit JSON",
+    "copyScene": "Copy Scene",
+    "copy": "Copy",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "status": {
+    "initializing": "Initializing video...",
+    "analyzingVideo": "Analyzing video info...",
+    "extractingFrame": "Extracting frame",
+    "extractComplete": "Extraction complete. {count} frames generated.",
+    "rewriting": "Rewriting script with Gemini... This may take a few minutes.",
+    "rewriteComplete": "Script rewrite complete!",
+    "zipping": "Zipping frames...",
+    "zipComplete": "ZIP download successful!",
+    "writingInProgress": "Gemini is writing the script...",
+    "error": {
+      "noVideo": "Error: Please select a video file.",
+      "intervalPositive": "Error: The interval must be greater than 0.",
+      "videoLoad": "Error: Could not load the video. Please try a different format.",
+      "videoAnalysisFailed": "Error: Could not analyze video metadata.",
+      "noFrames": "Error: No frames to analyze.",
+      "apiKeyAuth": "Error: Could not authenticate API key. Please try again.",
+      "analysisFailed": "Error: Analysis failed. Please try again.",
+      "apiKeyNotFound": "API key error. Please re-select your API key and try again.",
+      "zipFailed": "Error: Could not create ZIP file.",
+      "invalidJson": "Error: Invalid JSON format.",
+      "jsonParseError": "Error: One or more scene JSON configurations are invalid and cannot be opened for bulk editing.",
+      "jsonNotArray": "JSON data must be an array.",
+      "jsonItemMismatch": "The number of JSON items ({jsonCount}) does not match the number of scenes ({sceneCount}).",
+      "jsonSaveFailed": "Error: Could not save JSON. Please check the format."
+    }
+  },
+  "results": {
+    "frames": {
+      "title": "Extracted Frames ({count})",
+      "alt": "Frame",
+      "suggested": "Suggested Frames"
+    },
+    "script": {
+      "title": "Generated Script",
+      "subtitle": "Edit the JSON for each scene or download the entire script."
+    }
+  },
+  "modal": {
+    "editTitleScene": "Edit JSON for Scene",
+    "editTitleAllScenes": "Edit JSON for All Scenes"
+  },
+  "common": {
+    "male": "Male",
+    "female": "Female",
+    "copied": "Copied!",
+    "error": "Error",
+    "details": "Details"
+  }
+}

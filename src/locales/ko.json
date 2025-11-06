@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "AI 비디오 스크립트 생성기",
+    "subtitle": "Gemini를 사용하여 비디오를 분석하고 자동으로 스크립트를 생성합니다."
+  },
+  "config": {
+    "analysis": {
+      "title": "1. 분석 구성",
+      "modeCount": "프레임 수",
+      "modeInterval": "간격 (초)",
+      "frameCountLabel": "프레임 수:",
+      "intervalLabel": "X초마다 프레임 1개 캡처"
+    },
+    "upload": {
+      "title": "2. 비디오 업로드",
+      "selectFile": "파일 선택",
+      "dragAndDrop": "또는 드래그 앤 드롭",
+      "selected": "선택됨",
+      "delete": "비디오 삭제"
+    },
+    "script": {
+      "title": "새 스크립트 구성",
+      "aspectRatio": "화면 비율",
+      "style": "스타일",
+      "transition": "전환",
+      "sceneCount": "장면 수",
+      "backgroundMusic": "배경 음악",
+      "dialogue": "대화",
+      "dialogueLanguage": "대화 언어",
+      "ttsVoices": "사용 가능한 Gemini TTS 음성",
+      "srtUploadTitle": "SRT 파일 업로드 (대화용)",
+      "customPrompt": "스크립트 아이디어 (프롬프트)",
+      "customPromptPlaceholder": "예: 제품에 대한 짧고 드라마틱한 광고 만들기..."
+    }
+  },
+  "buttons": {
+    "startExtraction": "추출 시작",
+    "extracting": "추출 중...",
+    "downloadAll": "모두 다운로드",
+    "zipping": "압축 중...",
+    "rewriteScript": "스크립트 다시 작성",
+    "writing": "작성 중...",
+    "editAllJson": "모든 JSON 편집",
+    "copyText": "텍스트 복사",
+    "downloadJson": "다운로드 (JSON)",
+    "editJson": "JSON 편집",
+    "copyScene": "장면 복사",
+    "copy": "복사",
+    "cancel": "취소",
+    "save": "저장"
+  },
+  "status": {
+    "initializing": "비디오 초기화 중...",
+    "analyzingVideo": "비디오 정보 분석 중...",
+    "extractingFrame": "프레임 추출 중",
+    "extractComplete": "추출 완료. {count}개의 프레임이 생성되었습니다.",
+    "rewriting": "Gemini로 스크립트를 다시 작성 중입니다... 몇 분 정도 걸릴 수 있습니다.",
+    "rewriteComplete": "스크립트 다시 작성 완료!",
+    "zipping": "프레임 압축 중...",
+    "zipComplete": "ZIP 다운로드 성공!",
+    "writingInProgress": "Gemini가 스크립트를 작성 중입니다...",
+    "error": {
+      "noVideo": "오류: 비디오 파일을 선택하세요.",
+      "intervalPositive": "오류: 간격은 0보다 커야 합니다.",
+      "videoLoad": "오류: 비디오를 로드할 수 없습니다. 다른 형식을 시도해 보세요.",
+      "videoAnalysisFailed": "오류: 비디오 메타데이터를 분석할 수 없습니다.",
+      "noFrames": "오류: 분석할 프레임이 없습니다.",
+      "apiKeyAuth": "오류: API 키를 인증할 수 없습니다. 다시 시도해 주세요.",
+      "analysisFailed": "오류: 분석에 실패했습니다. 다시 시도해 주세요.",
+      "apiKeyNotFound": "API 키 오류입니다. API 키를 다시 선택하고 다시 시도해 주세요.",
+      "zipFailed": "오류: ZIP 파일을 만들 수 없습니다.",
+      "invalidJson": "오류: 잘못된 JSON 형식입니다.",
+      "jsonParseError": "오류: 하나 이상의 장면 JSON 구성이 잘못되어 일괄 편집을 위해 열 수 없습니다.",
+      "jsonNotArray": "JSON 데이터는 배열이어야 합니다.",
+      "jsonItemMismatch": "JSON 항목 수({jsonCount})가 장면 수({sceneCount})와 일치하지 않습니다.",
+      "jsonSaveFailed": "오류: JSON을 저장할 수 없습니다. 형식을 확인하세요."
+    }
+  },
+  "results": {
+    "frames": {
+      "title": "추출된 프레임 ({count})",
+      "alt": "프레임",
+      "suggested": "추천 프레임 수"
+    },
+    "script": {
+      "title": "생성된 스크립트",
+      "subtitle": "각 장면에 대한 JSON을 편집하거나 전체 스크립트를 다운로드하세요."
+    }
+  },
+  "modal": {
+    "editTitleScene": "장면 JSON 편집",
+    "editTitleAllScenes": "모든 장면의 JSON 편집"
+  },
+  "common": {
+    "male": "남성",
+    "female": "여성",
+    "copied": "복사됨!",
+    "error": "오류",
+    "details": "세부 정보"
+  }
+}

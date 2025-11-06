@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "AI 视频脚本生成器",
+    "subtitle": "使用 Gemini 分析视频并自动生成脚本。"
+  },
+  "config": {
+    "analysis": {
+      "title": "1. 分析配置",
+      "modeCount": "帧数",
+      "modeInterval": "按时间间隔（秒）",
+      "frameCountLabel": "帧数：",
+      "intervalLabel": "每 X 秒捕获一帧"
+    },
+    "upload": {
+      "title": "2. 上传视频",
+      "selectFile": "选择文件",
+      "dragAndDrop": "或拖放文件",
+      "selected": "已选择",
+      "delete": "删除视频"
+    },
+    "script": {
+      "title": "新脚本配置",
+      "aspectRatio": "宽高比",
+      "style": "风格",
+      "transition": "过渡",
+      "sceneCount": "场景数量",
+      "backgroundMusic": "背景音乐",
+      "dialogue": "对话",
+      "dialogueLanguage": "对话语言",
+      "ttsVoices": "可用的 Gemini TTS 语音",
+      "srtUploadTitle": "上传 SRT 文件 (用于对话)",
+      "customPrompt": "脚本创意（提示）",
+      "customPromptPlaceholder": "例如：为产品创作一个简短、戏剧性的商业广告..."
+    }
+  },
+  "buttons": {
+    "startExtraction": "开始提取",
+    "extracting": "提取中...",
+    "downloadAll": "全部下载",
+    "zipping": "压缩中...",
+    "rewriteScript": "重写脚本",
+    "writing": "编写中...",
+    "editAllJson": "编辑所有 JSON",
+    "copyText": "复制文本",
+    "downloadJson": "下载 (JSON)",
+    "editJson": "编辑 JSON",
+    "copyScene": "复制场景",
+    "copy": "复制",
+    "cancel": "取消",
+    "save": "保存"
+  },
+  "status": {
+    "initializing": "正在初始化视频...",
+    "analyzingVideo": "正在分析视频信息...",
+    "extractingFrame": "正在提取帧",
+    "extractComplete": "提取完成。共生成 {count} 帧。",
+    "rewriting": "正在使用 Gemini 重写脚本...这可能需要几分钟。",
+    "rewriteComplete": "脚本重写完成！",
+    "zipping": "正在压缩帧...",
+    "zipComplete": "ZIP 下载成功！",
+    "writingInProgress": "Gemini 正在编写脚本...",
+    "error": {
+      "noVideo": "错误：请选择一个视频文件。",
+      "intervalPositive": "错误：时间间隔必须大于 0。",
+      "videoLoad": "错误：无法加载视频。请尝试其他格式。",
+      "videoAnalysisFailed": "错误：无法分析视频元数据。",
+      "noFrames": "错误：没有可供分析的帧。",
+      "apiKeyAuth": "错误：无法验证 API 密钥。请重试。",
+      "analysisFailed": "错误：分析失败。请重试。",
+      "apiKeyNotFound": "API 密钥错误。请重新选择您的 API 密钥并重试。",
+      "zipFailed": "错误：无法创建 ZIP 文件。",
+      "invalidJson": "错误：无效的 JSON 格式。",
+      "jsonParseError": "错误：一个或多个场景 JSON 配置无效，无法打开进行批量编辑。",
+      "jsonNotArray": "JSON 数据必须是数组。",
+      "jsonItemMismatch": "JSON 项目数（{jsonCount}）与场景数（{sceneCount}）不匹配。",
+      "jsonSaveFailed": "错误：无法保存 JSON。请检查格式。"
+    }
+  },
+  "results": {
+    "frames": {
+      "title": "已提取的帧 ({count})",
+      "alt": "帧",
+      "suggested": "建议帧数"
+    },
+    "script": {
+      "title": "生成的脚本",
+      "subtitle": "编辑每个场景的 JSON 或下载整个脚本。"
+    }
+  },
+  "modal": {
+    "editTitleScene": "编辑场景 JSON",
+    "editTitleAllScenes": "编辑所有场景的 JSON"
+  },
+  "common": {
+    "male": "男",
+    "female": "女",
+    "copied": "已复制！",
+    "error": "错误",
+    "details": "详情"
+  }
+}
