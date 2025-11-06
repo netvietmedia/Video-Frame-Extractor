@@ -28,8 +28,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
                 // Fetch both current language and fallback language (English) concurrently
                 // Tải đồng thời cả ngôn ngữ hiện tại và ngôn ngữ dự phòng (Tiếng Anh)
                 const [currentLangResponse, fallbackLangResponse] = await Promise.all([
-                    fetch(`../src/locales/${language}.json`),
-                    fetch(`../src/locales/en.json`)
+                    fetch(`./src/locales/${language}.json`),
+                    fetch(`./src/locales/en.json`)
                 ]);
 
                 if (!currentLangResponse.ok || !fallbackLangResponse.ok) {
