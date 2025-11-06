@@ -1,4 +1,4 @@
-
+{
   "name": "Video Frame Extractor",
   "description": "An application to upload a video, extract frames at a specified interval, and download them as a ZIP archive. This tool requires 'jszip' and 'file-saver' libraries to function. Please install them using 'npm install jszip file-saver @types/file-saver'.",
   "requestFramePermissions": []
