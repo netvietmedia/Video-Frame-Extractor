@@ -1,5 +1,8 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai"
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY as string)
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" })
+
 import JSZip from 'jszip';
 import saveAs from 'file-saver';
 import MediaInfo from 'mediainfo.js';
